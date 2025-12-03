@@ -1,0 +1,4 @@
+.printDetails {
+	display: flex;
+	flex-direction: column;
+}

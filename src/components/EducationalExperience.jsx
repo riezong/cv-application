@@ -31,26 +31,15 @@ export default function EducationalExperience () {
     setSchoolName('');
     setTitleOfStudy('');
     setDateOfStudy('');
-    // setItems([
-    //   ...items,
-    //   {
-    //     id: nextID++,
-    //     schoolName: schoolName,
-    //     titleOfStudy: titleOfStudy,
-    //     dateOfStudy: titleOfStudy
-    //   }
-    // ])
-    // Copy items to new array for sorting
     const newItems = [
       ...items,
       {
         id: nextID++,
         schoolName: schoolName,
         titleOfStudy: titleOfStudy,
-        dateOfStudy: dateOfStudy // fixed typo from titleOfStudy
+        dateOfStudy: dateOfStudy
       }
     ];
-    // Sort by dateOfStudy (convert to appropriate type if needed)
     const sorted = [...newItems].sort((a, b) => a.dateOfStudy - b.dateOfStudy);
     setItems(sorted);
   }
@@ -96,10 +85,6 @@ export default function EducationalExperience () {
         </div>
           <ul>
           {items.map((item) => (
-            /* 1. KEY: We use item.id instead of index (Best Practice) 
-               2. RENDERING: We access specific properties (item.schoolName), 
-                  we cannot render the whole 'item' object at once.
-            */
             <li key={item.id}>
               <h3>{item.schoolName}</h3>
               <p>Study: {item.titleOfStudy}</p>
