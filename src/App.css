@@ -49,3 +49,126 @@ h6 {
 #__next {
 	isolation: isolate;
 }
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	color: orangered;
+	background-color: whitesmoke;
+}
+
+.hidden {
+	display: none;
+}
+
+.container {
+	padding: 1.5rem;
+	background-color: white;
+	border-radius: 12px;
+}
+
+h1 {
+	margin-top: 2rem;
+}
+
+.contact-details {
+	display: flex;
+	justify-content: flex-start;
+	gap: 2rem;
+}
+
+ul {
+	padding: 0px;
+	list-style-type: none;
+}
+
+.card {
+	margin: 1rem 0rem;
+	padding: 0.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	background-color: whitesmoke;
+}
+
+.card .display {
+	display: flex;
+}
+
+.card .date {
+	flex: 1;
+}
+
+.card .details {
+	flex: 4;
+}
+
+.general-information .edit {
+	margin: 1rem 0rem;
+}
+
+.general-information .form {
+	padding: 0.5rem 1rem;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	background-color: whitesmoke;
+}
+
+.form {
+	margin-top: 1rem;
+}
+
+.form .field {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 4px;
+}
+
+.form .field label {
+	flex: 1;
+}
+
+.form .field input {
+	padding: 4px 8px;
+	flex: 4;
+	background-color: white;
+	border: 0px;
+	border-radius: 4px;
+}
+
+button {
+	margin-right: 4px;
+	padding: 4px 12px;
+	border: 1px solid grey;
+	color: grey;
+	background-color: whitesmoke;
+}
+
+button.add {
+	margin-right: 4px;
+	padding: 4px 12px;
+	border: 2px solid orange;
+	color: white;
+	background-color: orange;
+}
+
+.btn-save {
+	border: 1px solid orange;
+	color: white;
+	background-color: orangered;
+}
+
+.btn-edit {
+	border: 1px solid grey;
+	color: grey;
+	background-color: whitesmoke;
+}
+
+.btn-delete {
+	border: 1px solid red;
+	color: red;
+	background-color: whitesmoke;
+}
