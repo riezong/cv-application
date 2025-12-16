@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import GeneralInformation from './components/generalInformation'
+import GeneralInformation from './components/GeneralInformation'
 import EducationalExperience from './components/EducationalExperience'
 import PracticalExperience from './components/PracticalExperience'
 
