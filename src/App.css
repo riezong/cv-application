@@ -59,11 +59,16 @@ body {
 	background-color: whitesmoke;
 }
 
+.show {
+	display: block;
+}
+
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 .container {
+	width: 800px;
 	padding: 1.5rem;
 	background-color: white;
 	border-radius: 12px;
@@ -134,9 +139,22 @@ ul {
 .form .field input {
 	padding: 4px 8px;
 	flex: 4;
+	color: orangered;
 	background-color: white;
 	border: 0px;
 	border-radius: 4px;
+}
+
+textarea {
+	flex: 4;
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	color: orangered;
+	background-color: white;
+}
+
+.description {
+	white-space: pre-wrap;
 }
 
 button {
