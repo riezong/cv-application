@@ -68,7 +68,7 @@ body {
 }
 
 .container {
-	width: 800px;
+	/* width: 800px; */
 	padding: 1.5rem;
 	background-color: white;
 	border-radius: 12px;
